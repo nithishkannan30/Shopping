@@ -1,0 +1,54 @@
+.Navbar{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.Navbar h1{
+   color:brown;
+}
+.Navbar .icon{
+  margin-right:20px ;
+}
+.container{
+  margin-right: 20px;
+}
+.route{
+  display: flex;
+  margin-top:15px;
+}
+.route .NavLink{
+   color: black;
+   text-decoration: none;
+   margin: 20px;
+}
+.Home{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.image-container{
+  width: 200px;
+  height: 300px;
+  border: 2px solid black;
+  border-color: brown;
+  border-radius: 20px;
+  margin: 30px;
+}
+.image-container img{
+  width: 180px;
+  height: 200px;
+  padding: 5px;
+  padding-left: 30px;
+}
+.image-container p{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top:10px;
+}
+.image-container .btn{
+  margin-left:40px;
+  outline: 2px solid black;
+  background-color:rgb(123, 15, 15) ;
+  color: white;
+}
