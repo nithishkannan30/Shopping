@@ -1,54 +1,118 @@
-.Navbar{
+@import url("https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.Navbar {
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
 }
-.Navbar h1{
-   color:brown;
+.Navbar h1 {
+  color: brown;
+  margin-left: 20px;
 }
-.Navbar .icon{
-  margin-right:20px ;
-}
-.container{
+.Navbar .icon {
   margin-right: 20px;
 }
-.route{
+
+.route {
   display: flex;
-  margin-top:15px;
+  margin-top: 15px;
 }
-.route .NavLink{
-   color: black;
-   text-decoration: none;
-   margin: 20px;
+.route .NavLink {
+  color: black;
+  text-decoration: none;
+  margin: 20px;
 }
-.Home{
+.Home {
   display: flex;
   flex-wrap: wrap;
   margin-top: 50px;
 }
-.image-container{
+.image-container {
   width: 200px;
   height: 300px;
-  border: 2px solid black;
-  border-color: brown;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 20px;
   margin: 30px;
 }
-.image-container img{
+.image-cart-container {
+  position: relative;
+  width: 200px;
+  height: 360px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 20px;
+  margin: 30px;
+  text-align: center;
+}
+.image-cart-container img {
   width: 180px;
   height: 200px;
-  padding: 5px;
+  padding: 10px;
   padding-left: 30px;
 }
-.image-container p{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin-top:10px;
+.image-cart-container button {
+  border: none;
+  padding: 3px 8px;
+  border-radius: 2px;
+  margin-right: 3px;
 }
-.image-container .btn{
-  margin-left:40px;
-  outline: 2px solid black;
-  background-color:rgb(123, 15, 15) ;
+.image-container img {
+  width: 180px;
+  height: 200px;
+  padding: 10px;
+  padding-left: 30px;
+  object-fit: contain;
+  transform: scaleY(1);
+}
+.image-container p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.image-container .btn {
+  margin-left: 40px;
+  background-color: rgb(123, 15, 15);
+  text-decoration: none;
   color: white;
+  font-family: "Protest Strike", sans-serif;
+}
+.image-container .btn:focus {
+  color: white;
+  background-color: rgb(123, 15, 15);
+}
+.ImgContainer {
+  width: 90vw;
+  display: flex;
+  padding: 10px;
+  margin: 20px auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.ImgContainer img {
+  margin: 20px;
+  width: 50vw;
+  height: 60vh;
+  object-fit: contain;
+}
+.ImgContainer h1 {
+  font-family: "Protest Strike", sans-serif;
+  font-weight: 900;
+}
+.ImgContainer h1 {
+  font-family: "Protest Strike", sans-serif;
+  font-weight: 600;
+}
+.ImgContainer button {
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(123, 15, 15);
+}
+.cartcontainer {
+  display: flex;
+  flex-wrap: wrap;
 }
